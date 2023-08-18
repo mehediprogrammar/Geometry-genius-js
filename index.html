@@ -12,7 +12,7 @@
       <header>
 
       </header>
-      <main class="my-20">
+      <main class="my-20 mx-w-auto">
               <!-- main container -->
             <div class="flex flex-col lg:flex-row">
                 <!-- shope container -->
@@ -21,10 +21,18 @@
                    <div class="card w-96 bg-base-100 shadow-xl">
                         <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Triangle</h2>
-                        
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                          <h2 class="card-title text-2xl font-bold">Triangle</h2>
+                           <p class="text-2xl font-bold">Area (A) = 0.5 x b x h</p>
+                         <p>       <!-- base input -->
+                              <input id="triangle-base" type="text" class="ml-4 border-black w-24 bg-gray-200 p-3 rounded-lg text-2xl" placeholder="base">
+                              <samp class="ml-2">cm</samp>
+                             <!-- height input -->
+                             <input id="triangle-height" type="text" class="ml-4 border-black w-24 bg-gray-200 p-3 rounded-lg text-2xl" placeholder="base">
+                              <samp  class="ml-2">cm</samp>
+                        </p>
+                        <p class="text-2xl font-bold">Area: <span id="translate-area"></span> Cm<sup>2</sup></p>
+                          <div class="card-actions  ">
+                            <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Buy Now</button>
                           </div>
                         </div>
                       </div>
@@ -62,5 +70,6 @@
                 
             </div>
       </main>
+      <script src="./js/area-calcutal.js"></script>
 </body>
 </html>
